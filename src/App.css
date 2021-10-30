@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary: #dd9933;
+  --secondary: #ff9900;
+  --black: #3d3d3d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Quicksand", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar Start */
+nav.navbar-nav {
+  height: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+nav.navbar-nav .logo p {
+  font-weight: 600;
+  color: var(--secondary);
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+}
+
+nav.navbar-nav ul li {
+  list-style: none;
+  margin-left: 50px;
+  font-weight: 500;
+  color: var(--secondary);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+}
+
+nav.change {
+  background-color: white;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+}
+nav.change .logo p,
+nav.change ul li {
+  text-shadow: none;
+}
+
+/* Navbar End */
+
+/* Footer Start */
+footer {
+  width: 100%;
+  height: 350px;
+  background-color: var(--black);
+}
+
+footer p {
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+}
+
+footer .container-footer {
+  width: 90%;
+  margin: auto;
+}
+
+footer .container-footer .col-md-4.footer-menu {
+  text-align: end;
+}
+footer .container-footer .col-md-4.footer-menu ul li {
+  list-style: none;
+}
+footer i {
+  color: white;
+  font-size: 28px;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 8px;
+  margin: 8px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+footer i:hover {
+  color: var(--black);
+  background-color: white;
+  border: 2px solid white;
+}
+footer a,
+footer .link-footer {
+  text-decoration: none;
   color: white;
 }
+footer a:hover,
+footer .link-footer p:hover {
+  text-decoration: none;
+  color: var(--primary);
+}
+/* Footer End */
 
-.App-link {
-  color: #61dafb;
+/* Custom Page Start */
+.custom-page {
+  width: 100%;
+  height: 100vh;
+}
+.custom-page .box h3 {
+  font-weight: 600;
+}
+.custom-page .box {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
+  width: 30%;
+  height: 400px;
+}
+.custom-page .box input {
+  outline: none;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgb(226, 226, 226, 0.2);
+  width: 100%;
+}
+.custom-page .box label {
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-page .box .btn-custom {
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
+/* Custom Page End */

@@ -1,0 +1,156 @@
+:root {
+  --primary: #dd9933;
+  --font: #3d3d3d;
+}
+
+body {
+  color: var(--font);
+}
+
+/* Homepage Start */
+.homepage .jumbotron {
+  background-image: url("../assets/img/jumbotron.png");
+  background-size: cover;
+  height: 600px;
+}
+
+.homepage .jumbotron h1,
+.homepage .jumbotron h3 {
+  color: white;
+  margin: 0;
+  text-shadow: 1.8px 1.8px 1.8px rgba(0, 0, 0, 0.2);
+}
+
+.homepage .jumbotron h1 {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.homepage .jumbotron h3 {
+  font-weight: 400;
+}
+
+.homepage .jumbotron .btn-jumbotron {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  padding: 9px 18px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.homepage .jumbotron .btn-jumbotron:hover {
+  background-color: #ff9900;
+}
+/* Homepage End */
+
+/* Section Service Start */
+section.service {
+  margin-top: 100px;
+}
+section.service .title {
+  width: 500px;
+}
+section.service .title h3 {
+  font-weight: 700;
+}
+section.service .title p {
+  font-weight: 600;
+  color: #3d3d3dea;
+  font-size: 14px;
+}
+section.service .card-service .box {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  height: 350px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  transform: scale(0.99);
+  transition: 0.2s;
+  text-align: center;
+}
+section.service .card-service .box img {
+  margin: 18px 0;
+}
+section.service .card-service .box h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+section.service .card-service .box:hover {
+  transform: scale(1);
+}
+/* Section Service End */
+
+/* Section Portfolio Start */
+section.portfolio .btn-add-portfolio {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  padding: 9px 18px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section.portfolio .btn-add-portfolio:hover {
+  background-color: #ff9900;
+}
+section.portfolio .card-portfolio .title-portfolio {
+  background-color: var(--primary);
+  padding: 8px 15px;
+}
+section.portfolio .card-portfolio .title-portfolio p {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+section.portfolio .card-portfolio .title-portfolio i {
+  color: white;
+  padding-top: 3px;
+}
+/* Section Portfolio End */
+
+/*  Contact Start */
+.page-contact {
+  width: 100%;
+  height: 100vh;
+  color: #3d3d3d;
+}
+.page-contact h3 {
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+.page-contact {
+  font-weight: 500;
+  color: var(--primaryColor);
+}
+.page-contact a {
+  text-decoration: none;
+  color: white;
+}
+.page-contact i {
+  font-size: 24px;
+  color: white;
+}
+.page-contact .email,
+.page-contact .telp {
+  width: 280px;
+  background-color: var(--primary);
+  border: 1.5px solid var(--primaryColor);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.089);
+  transition: 0.2s;
+  transform: scale(0.95);
+}
+.page-contact .email:hover,
+.page-contact .telp:hover {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+}
+/*  Contact End */
